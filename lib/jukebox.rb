@@ -21,3 +21,7 @@ def help
 
   puts help
 end
+
+def play(songs)
+  
+end
