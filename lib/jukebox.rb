@@ -47,6 +47,11 @@ def exit_jukebox
 
 end
 
+def prompt()
+  puts "Please enter a command:"
+  gets.chomp()
+end
+
 def run(my_songs)
   help()
   input = prompt()
