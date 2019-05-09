@@ -35,7 +35,7 @@ def play(songs)
   else
     puts "Invalid input, please try again"
   end
-    
+
 end
 
 def list(songs)
@@ -48,6 +48,24 @@ def exit_jukebox
 
 end
 
-def run
-
+def run(songs)
+  command = ""
+  while command
+    puts "Please enter a commnad: "
+    commnad = gets.downcase.strip
+    case commnad
+    when "list"
+      list(songs)
+    when "play"
+      list(songs)
+      play(songs)
+    when "help"
+      help
+    when "exit"
+      exit_jukebox
+      break
+    else
+      help
+    end
+  end
 end
