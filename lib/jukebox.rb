@@ -28,7 +28,7 @@ def play(songs)
 
 end
 
-def list
+def list(songs)
 end
 
 def exit
